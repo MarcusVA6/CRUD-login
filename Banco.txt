@@ -1,0 +1,21 @@
+CREATE DATABASE jf_arquitetura;
+
+CREATE TABLE usuarios(
+id int AUTO_INCREMENT PRIMARY KEY NOT null,
+nome varchar(200) not null,
+email varchar(150) UNIQUE not null,
+senha varchar(200) not null,
+perfil ENUM ('ADMINISTRADOR','PADRÂO') nOT null
+);
+
+INSERT INTO usuarios 
+VALUES (null, 'Test1', 'test1@test.com', '1', 'ADMINISTRADOR');
+
+INSERT INTO usuarios 
+VALUES (null, 'Test2', 'test2@test.com', '2', 'ADMINISTRADOR');
+
+INSERT INTO usuarios 
+VALUES (null, 'Test3', 'test3@test.com', '3', 'PADRÂO');
+
+INSERT INTO usuarios 
+VALUES (null, 'Test4', 'test4@test.com', '4', 'PADRÂO');
