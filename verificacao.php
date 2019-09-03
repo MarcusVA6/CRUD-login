@@ -11,7 +11,7 @@ $senha = $_POST['senha'];
  
 include_once "conexao.php";
 
-$sql = mysqli_query($con, "SELECT * FROM usuario WHERE email = '$email' AND senha = SHA1('$senha')");
+$sql = mysqli_query($con, "SELECT * FROM usuario WHERE email = '" . $email . "' AND senha = SHA1('" . $senha . "')");
 
 if(mysqli_num_rows($sql) == 1 )
 {

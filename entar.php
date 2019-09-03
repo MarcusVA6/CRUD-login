@@ -39,7 +39,7 @@
 
             <div class="col-md-4"></div>
 
-            <form class="formu col-md-4" action="conexao.php" method = "post">>
+            <form class="formu col-md-4" action="verificacao.php" method = "post">>
                 <h3 class="mb-4">Login</h3>
 
                 <img width="100" src="img/avatar.png" alt="">
